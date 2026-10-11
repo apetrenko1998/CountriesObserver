@@ -9,3 +9,10 @@ xcuserdata/
 
 # SPM
 .build/
+.swiftpm/
+
+# Apollo iOS CLI
+apollo-ios-cli
+
+# macOS
+.DS_Store

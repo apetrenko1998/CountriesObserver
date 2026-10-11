@@ -1,0 +1,43 @@
+{
+  "schemaNamespace" : "CountriesAPI",
+  "schemaDownload" : {
+    "downloadMethod" : {
+      "introspection" : {
+        "endpointURL" : "https://countries.trevorblades.com/graphql",
+        "httpMethod" : {
+          "POST" : {}
+        },
+        "includeDeprecatedInputValues" : false,
+        "outputFormat" : "SDL"
+      }
+    },
+    "downloadTimeout" : 60,
+    "headers" : [],
+    "outputPath" : "./GraphQL/schema.graphqls"
+  },
+  "input" : {
+    "operationSearchPaths" : [
+      "./GraphQL/**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "./GraphQL/schema.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./CountriesAPI",
+      "moduleType" : {
+        "swiftPackage" : {
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}
