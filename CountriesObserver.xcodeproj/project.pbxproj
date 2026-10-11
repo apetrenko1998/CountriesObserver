@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD07D6503078E0B0005ED0F4 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6543078E0B0005ED0F4 /* Apollo */; };
+		FD07D6513078E0B0005ED0F4 /* CountriesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6553078E0B0005ED0F4 /* CountriesAPI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FD07D6233078E084005ED0F4 /* CountriesObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD07D6503078E0B0005ED0F4 /* Apollo in Frameworks */,
+				FD07D6513078E0B0005ED0F4 /* CountriesAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +73,8 @@
 			);
 			name = CountriesObserver;
 			packageProductDependencies = (
+				FD07D6543078E0B0005ED0F4 /* Apollo */,
+				FD07D6553078E0B0005ED0F4 /* CountriesAPI */,
 			);
 			productName = CountriesObserver;
 			productReference = FD07D6233078E084005ED0F4 /* CountriesObserver.app */;
@@ -97,6 +106,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FD07D6423078E0A0005ED0F4 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				FD07D6533078E0B0005ED0F4 /* XCLocalSwiftPackageReference "CountriesAPI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FD07D6243078E084005ED0F4 /* Products */;
@@ -344,6 +355,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		FD07D6533078E0B0005ED0F4 /* XCLocalSwiftPackageReference "CountriesAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CountriesAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		FD07D6423078E0A0005ED0F4 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -353,6 +371,14 @@
 				minimumVersion = 0.65.1;
 			};
 		};
+		FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -360,6 +386,15 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FD07D6423078E0A0005ED0F4 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		FD07D6543078E0B0005ED0F4 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		FD07D6553078E0B0005ED0F4 /* CountriesAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
