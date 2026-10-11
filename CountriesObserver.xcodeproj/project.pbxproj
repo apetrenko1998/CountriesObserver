@@ -362,11 +362,11 @@
 /* Begin XCLocalSwiftPackageReference section */
 		FD07D6533078E0B0005ED0F4 /* XCLocalSwiftPackageReference "CountriesAPI" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = CountriesAPI;
+			relativePath = Packages/CountriesAPI;
 		};
 		FD07D6573078E0B0005ED0F4 /* XCLocalSwiftPackageReference "DesignSystem" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = DesignSystem;
+			relativePath = Packages/DesignSystem;
 		};
 /* End XCLocalSwiftPackageReference section */
 

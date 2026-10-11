@@ -29,7 +29,7 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./CountriesAPI",
+      "path" : "./Packages/CountriesAPI",
       "moduleType" : {
         "swiftPackage" : {
         }
