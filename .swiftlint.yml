@@ -4,6 +4,8 @@
 excluded:
   - .build
   - DerivedData
+  - CountriesAPI
+  - GraphQL
 
 opt_in_rules:
   - closure_spacing
