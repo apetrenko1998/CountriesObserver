@@ -14,14 +14,5 @@ public enum DSColor {
         public static let tertiary = Color(uiColor: .tertiaryLabel)
     }
 
-    public enum Background {
-        public static let primary = Color(uiColor: .systemGroupedBackground)
-        public static let surface = Color(uiColor: .secondarySystemGroupedBackground)
-    }
-
-    public enum Status {
-        public static let error = Color(uiColor: .systemRed)
-    }
-
     public static let accent = Color("Accent", bundle: .module)
 }
