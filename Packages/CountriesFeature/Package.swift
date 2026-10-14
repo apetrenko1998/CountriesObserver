@@ -59,6 +59,17 @@ let package = Package(
                 .product(name: "NetworkingTestSupport", package: "Networking"),
                 .product(name: "CountriesAPI", package: "CountriesAPI")
             ]
+        ),
+        /// View models wired to the real use cases and repository, with only `GraphQLClient` mocked.
+        .testTarget(
+            name: "CountriesIntegrationTests",
+            dependencies: [
+                "CountriesPresentation",
+                "CountriesDomain",
+                "CountriesData",
+                .product(name: "Networking", package: "Networking"),
+                .product(name: "NetworkingTestSupport", package: "Networking")
+            ]
         )
     ],
     swiftLanguageModes: [.v6]
