@@ -9,7 +9,13 @@ import ApolloAPI
 
 nonisolated public enum SchemaConfiguration: ApolloAPI.SchemaConfiguration {
   public static func cacheKeyInfo(for type: ApolloAPI.Object, object: ApolloAPI.ObjectData) -> CacheKeyInfo? {
-    // Implement this function to configure cache key resolution for your schema types.
-    return nil
+    switch type {
+    case Objects.Country:
+      // Countries are uniquely identified by their ISO code, so list and detail
+      // responses share one normalized cache entry.
+      return try? CacheKeyInfo(jsonValue: object["code"])
+    default:
+      return nil
+    }
   }
 }

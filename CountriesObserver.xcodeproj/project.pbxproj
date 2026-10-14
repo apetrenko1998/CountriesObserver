@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD07D6503078E0B0005ED0F4 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6543078E0B0005ED0F4 /* Apollo */; };
-		FD07D6513078E0B0005ED0F4 /* CountriesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6553078E0B0005ED0F4 /* CountriesAPI */; };
+		FD07D6653078E0B0005ED0F4 /* DependencyInjection in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6643078E0B0005ED0F4 /* DependencyInjection */; };
+		FD07D6623078E0B0005ED0F4 /* CountriesPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6613078E0B0005ED0F4 /* CountriesPresentation */; };
 		FD07D6563078E0B0005ED0F4 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D6583078E0B0005ED0F4 /* DesignSystem */; };
+		FD07D65E3078E0B0005ED0F4 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D65B3078E0B0005ED0F4 /* Networking */; };
+		FD07D65F3078E0B0005ED0F4 /* CountriesDomain in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D65C3078E0B0005ED0F4 /* CountriesDomain */; };
+		FD07D6603078E0B0005ED0F4 /* CountriesData in Frameworks */ = {isa = PBXBuildFile; productRef = FD07D65D3078E0B0005ED0F4 /* CountriesData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD07D6503078E0B0005ED0F4 /* Apollo in Frameworks */,
-				FD07D6513078E0B0005ED0F4 /* CountriesAPI in Frameworks */,
 				FD07D6563078E0B0005ED0F4 /* DesignSystem in Frameworks */,
+				FD07D6653078E0B0005ED0F4 /* DependencyInjection in Frameworks */,
+				FD07D65E3078E0B0005ED0F4 /* Networking in Frameworks */,
+				FD07D65F3078E0B0005ED0F4 /* CountriesDomain in Frameworks */,
+				FD07D6603078E0B0005ED0F4 /* CountriesData in Frameworks */,
+				FD07D6623078E0B0005ED0F4 /* CountriesPresentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +81,12 @@
 			);
 			name = CountriesObserver;
 			packageProductDependencies = (
-				FD07D6543078E0B0005ED0F4 /* Apollo */,
-				FD07D6553078E0B0005ED0F4 /* CountriesAPI */,
 				FD07D6583078E0B0005ED0F4 /* DesignSystem */,
+				FD07D6643078E0B0005ED0F4 /* DependencyInjection */,
+				FD07D65B3078E0B0005ED0F4 /* Networking */,
+				FD07D65C3078E0B0005ED0F4 /* CountriesDomain */,
+				FD07D65D3078E0B0005ED0F4 /* CountriesData */,
+				FD07D6613078E0B0005ED0F4 /* CountriesPresentation */,
 			);
 			productName = CountriesObserver;
 			productReference = FD07D6233078E084005ED0F4 /* CountriesObserver.app */;
@@ -109,9 +118,10 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FD07D6423078E0A0005ED0F4 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
-				FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				FD07D6533078E0B0005ED0F4 /* XCLocalSwiftPackageReference "CountriesAPI" */,
-				FD07D6573078E0B0005ED0F4 /* XCLocalSwiftPackageReference "DesignSystem" */,
+				FD07D6573078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */,
+				FD07D6633078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/DependencyInjection" */,
+				FD07D6593078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/Networking" */,
+				FD07D65A3078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/CountriesFeature" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FD07D6243078E084005ED0F4 /* Products */;
@@ -362,13 +372,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		FD07D6533078E0B0005ED0F4 /* XCLocalSwiftPackageReference "CountriesAPI" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/CountriesAPI;
-		};
-		FD07D6573078E0B0005ED0F4 /* XCLocalSwiftPackageReference "DesignSystem" */ = {
+		FD07D6573078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/DesignSystem" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/DesignSystem;
+		};
+		FD07D6633078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/DependencyInjection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DependencyInjection;
+		};
+		FD07D6593078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Networking;
+		};
+		FD07D65A3078E0B0005ED0F4 /* XCLocalSwiftPackageReference "Packages/CountriesFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CountriesFeature;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -381,14 +399,6 @@
 				minimumVersion = 0.65.1;
 			};
 		};
-		FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apollographql/apollo-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.4.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -397,18 +407,29 @@
 			package = FD07D6423078E0A0005ED0F4 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
-		FD07D6543078E0B0005ED0F4 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD07D6523078E0B0005ED0F4 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		FD07D6553078E0B0005ED0F4 /* CountriesAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CountriesAPI;
-		};
 		FD07D6583078E0B0005ED0F4 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		FD07D6643078E0B0005ED0F4 /* DependencyInjection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyInjection;
+		};
+		FD07D65B3078E0B0005ED0F4 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		FD07D65C3078E0B0005ED0F4 /* CountriesDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesDomain;
+		};
+		FD07D65D3078E0B0005ED0F4 /* CountriesData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesData;
+		};
+		FD07D6613078E0B0005ED0F4 /* CountriesPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CountriesPresentation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

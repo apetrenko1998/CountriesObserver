@@ -17,7 +17,7 @@
   },
   "input" : {
     "operationSearchPaths" : [
-      "./GraphQL/**/*.graphql"
+      "./Packages/CountriesFeature/Sources/CountriesData/GraphQL/**/*.graphql"
     ],
     "schemaSearchPaths" : [
       "./GraphQL/schema.graphqls"
@@ -25,19 +25,25 @@
   },
   "output" : {
     "testMocks" : {
-      "none" : {
-      }
+      "none" : {}
     },
     "schemaTypes" : {
       "path" : "./Packages/CountriesAPI",
       "moduleType" : {
-        "swiftPackage" : {
-        }
+        "swiftPackage" : {}
       }
     },
     "operations" : {
-      "inSchemaModule" : {
+      "absolute" : {
+        "path" : "./Packages/CountriesFeature/Sources/CountriesData/Generated",
+        "accessModifier" : "internal"
       }
+    }
+  },
+  "options" : {
+    "selectionSetInitializers" : {
+      "operations" : true,
+      "namedFragments" : true
     }
   }
 }
