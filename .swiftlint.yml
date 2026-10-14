@@ -2,9 +2,10 @@
 # Rules reference: https://realm.github.io/SwiftLint/rule-directory.html
 
 excluded:
-  - .build
+  - "**/.build"
   - DerivedData
   - Packages/CountriesAPI
+  - Packages/CountriesFeature/Sources/CountriesData/Generated
   - GraphQL
 
 opt_in_rules:

@@ -16,3 +16,6 @@ apollo-ios-cli
 
 # macOS
 .DS_Store
+
+# Local packages: versions are pinned by the app's Package.resolved
+Packages/*/Package.resolved
