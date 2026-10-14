@@ -10,4 +10,5 @@ import SwiftUI
 public extension ShapeStyle where Self == Color {
     static var textPrimary: Color { DSColor.Text.primary }
     static var textSecondary: Color { DSColor.Text.secondary }
+    static var textTertiary: Color { DSColor.Text.tertiary }
 }
