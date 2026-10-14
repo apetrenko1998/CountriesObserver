@@ -11,6 +11,7 @@ public enum DSColor {
     public enum Text {
         public static let primary = Color(uiColor: .label)
         public static let secondary = Color(uiColor: .secondaryLabel)
+        public static let tertiary = Color(uiColor: .tertiaryLabel)
     }
 
     public enum Background {
